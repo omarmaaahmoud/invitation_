@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     fps: 24,
     totalFrames: 121, // 1 to 121
     eventDate: new Date('2026-11-11T19:00:00+02:00'),
-    whatsappPhone: '201210288768', // Host WhatsApp number
-    groomName: 'سيف',
-    brideName: 'حبيبة',
+    whatsappPhone: '201055602438', // Host WhatsApp number
+    groomName: 'اسم العريس',
+    brideName: 'اسم العروسة',
   };
 
   const state = {
@@ -508,8 +508,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const calendarBtn = document.getElementById('add-to-calendar-btn');
   if (calendarBtn) {
     calendarBtn.addEventListener('click', () => {
-      const title = 'حفل خطوبة سيف & حبيبة';
-      const description = 'يتشرف العروسان سيف وحبيبة بدعوتكم لحضور حفل خطوبتهم المباركة';
+      const title = 'حفل خطوبة اسم العريس & اسم العروسة';
+      const description = 'يتشرف العروسان بدعوتكم لحضور حفل خطوبتهم المباركة';
       const location = 'قاعة كريستال، الرأس السوداء، الإسكندرية';
       const start = '20261111T190000';
       const end = '20261111T233000';
@@ -571,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('guest-message').value.trim();
 
       const attendanceText = attendance === 'attending' ? '✅ بكل سرور سأحضر الحفل' : '🤍 أعتذر عن الحضور لظروف خاصة';
-      let waText = `*تأكيد حضور حفل خطوبة سيف وحبيبة 💍✨*\n\n`;
+      let waText = `*تأكيد حضور حفل خطوبة اسم العريس واسم العروسة 💍✨*\n\n`;
       waText += `*الاسم:* ${name}\n`;
       waText += `*حالة الحضور:* ${attendanceText}\n`;
       if (attendance === 'attending') {
@@ -598,7 +598,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // WhatsApp URL: official wa.me universal deep link
-      const phone = '201210288768';
+      const phone = '201055602438';
       const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(waText)}`;
 
       // Update the direct link button
@@ -623,7 +623,7 @@ document.addEventListener('DOMContentLoaded', () => {
     shareBtn.addEventListener('click', () => {
       if (navigator.share) {
         navigator.share({
-          title: 'دعوة خطوبة | سيف & حبيبة',
+          title: 'دعوة خطوبة | اسم العريس & اسم العروسة',
           text: 'يسعدنا ويشرفنا دعوتكم لحضور حفل خطوبتنا المباركة 💍✨',
           url: window.location.href,
         }).catch(() => {});
@@ -683,13 +683,13 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: 'default-2',
       author: 'الأصدقاء والأحباب',
-      text: 'ألف ألف مبروك للغالي سيف والجميلة حبيبة، جعل الله كل أيامكم فرح وهنا ومحبة لا تنتهي. 🌹✨',
+      text: 'ألف ألف مبروك للعروسين، جعل الله كل أيامكم فرح وهنا ومحبة لا تنتهي. 🌹✨',
       timestamp: Date.now() - 1000 * 60 * 18
     },
     {
       id: 'default-4',
       author: 'شلة الصحاب الجدعان',
-      text: 'مبروك يا عريسنا سيف ومبروك يا أحلى عروسة حبيبة، جاهزين نولع الفرح ونفرح بيكم للصبح! 🔥💃',
+      text: 'مبروك لأحلى عريس وأحلى عروسة، جاهزين نولع الفرح ونفرح بيكم للصبح! 🔥💃',
       timestamp: Date.now() - 1000 * 60 * 60
     }
   ];
